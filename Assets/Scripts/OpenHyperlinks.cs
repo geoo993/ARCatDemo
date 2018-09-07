@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using TMPro;
 
+// https://deltadreamgames.com/unity-tmp-hyperlinks/
 // somewhat based upon the TextMesh Pro example script: TMP_TextSelector_B
 [RequireComponent(typeof(TextMeshProUGUI))]
 public class OpenHyperlinks : MonoBehaviour, IPointerClickHandler {
