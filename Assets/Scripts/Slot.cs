@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class Slot : MonoBehaviour, IDropHandler {
@@ -20,6 +21,7 @@ public class Slot : MonoBehaviour, IDropHandler {
             {
                 DragHandler.objectDragged.transform.SetParent(transform);
                 ExecuteEvents.ExecuteHierarchy<IHasChanged>(gameObject, null, (x, y) => x.HasChanged());
+                GameObject.Find("GameManager").GetComponent<GameManager>().WordCorrect();
             }
         }
     }

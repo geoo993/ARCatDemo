@@ -16,7 +16,7 @@ public class Inventory : MonoBehaviour, IHasChanged {
     
     public void HasChanged() {
         System.Text.StringBuilder builder = new System.Text.StringBuilder();
-        builder.Append(" Complete the word ");
+        builder.Append("Well Done, you found ");
         foreach(Transform slotTranform in slots) {
             GameObject item = slotTranform.GetComponent<Slot>().item;
             if (item) {
